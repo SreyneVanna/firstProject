@@ -19,17 +19,17 @@
 </head>
 <body>
     <!-- menu -->
-    <section class="container-fluid header-menu  ">
-        <div class="row">
-            <div class="col-xl-3 col-3  " >
-                <div class="logo">
+    <section id="nav" class="container-fluid header-menu  ">
+        <div  class="row">
+            <div  class="col-xl-3 col-3  " >
+                <div  class="logo">
                     <img data-aos="flip-up" 
                     data-aos-duration="1000"
                     data-aos="zoom-in-down" src="img/loshop.png" alt="">
                 </div>
             </div>
             <div class="col-xl-7  col-6" >
-                <div class="menu  " >
+                <div class="menu">
                     <ul>
                         <li>
                             <a href="">ទំព័រដើម
@@ -851,5 +851,15 @@
             $('.menu').slideToggle();
         })
     })
+    window.onscroll=function(){
+        if(pageYOffset>100){
+            nav.style.position="fixed"
+            nav.style.top="0"
+        }
+        else{
+            nav.style.position=""
+            nav.style.top=""
+        }
+    }
 </script>
 </html> 

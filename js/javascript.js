@@ -1,4 +1,5 @@
 <script>
+    
     function test1(){
         document.getElementById('IMG').setAttribute('src','https://phorn-khouch.netlify.app/image/h1.png')
     }
@@ -14,4 +15,5 @@
     function defaulIMG(){
         document.getElementById('IMG').setAttribute('src','https://phorn-khouch.netlify.app/image/w3.png')
     }
+    
 </script>
